@@ -7,4 +7,4 @@
 # REQUIREMENT: 
 #============
 
-jupyter notebook --ip=0.0.0.0 --allow-root
+jupyter notebook --ip=0.0.0.0 --allow-root --no-browser
