@@ -91,7 +91,7 @@ class load_data():
                 sample['t'] = np.asarray(t_train[i], dtype='int32')
             image = imread(row['image'], as_gray=True)
             image = pad2square(image)
-            image = resize(image, output_shape=image_shape, mode='reflect', anti_aliasing=True)
+            image = resize(image, output_shape=image_shape, mode='reflect')
             image = np.expand_dims(image, axis=2)
             sample['image'] = image   
             data[row['id']] = sample
